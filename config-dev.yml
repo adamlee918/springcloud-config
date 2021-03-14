@@ -1,0 +1,14 @@
+config:
+  info: main, config-dev.yml, version=1
+
+spring:
+  #服务的名称，十分重要，不能轻易改变
+  #从服务注册中心获取服务的调用地址时，需要凭据服务名称获取。
+  application:
+    name: cloud-payment-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://localhost:3306/db2019?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: adam23
